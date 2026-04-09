@@ -1,4 +1,5 @@
 # Legacy Database Discovery Demo
+## using GitHub Copilot
 
 Demonstrates how **GitHub Copilot** (CLI / Agent Mode in VS Code) can discover, investigate, and document legacy SQL Server databases on remote Windows servers — showcasing a complete "zero to one" migration preparation workflow.
 
@@ -27,6 +28,9 @@ Copilot connects to a remote Windows Server running SQL Server 2022, discovers c
    Azure Key Vault
    (stores/retrieves credentials)
 ```
+
+## Demo script
+Example demo script is here: [demo-script.md](demo-script.md)
 
 ### Scenario 1: Known Credentials → Direct Discovery
 
@@ -87,6 +91,10 @@ sqlcmd -S tcp:<VM_IP>,1433 -U sa -P <password> -Q "SELECT name FROM sys.database
 # SSH connection
 ssh azureuser@<VM_IP>
 ```
+
+### Demo
+Example demo script is here: [demo-script.md](demo-script.md)
+
 
 ### Teardown
 
